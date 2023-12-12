@@ -1,0 +1,7 @@
+{# chat/message.stream.html.twig #}
+{# New messages received through the Mercure connection are appended to the div with the "messages" ID. #}
+<turbo-stream action="append" target="messages">
+    <template>
+        <div>{{ user.email }} : {{ message }}</div>
+    </template>
+</turbo-stream>
